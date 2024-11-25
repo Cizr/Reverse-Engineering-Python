@@ -1,0 +1,31 @@
+@startuml
+class Person {
+  - name
+  + __init__()
+  + __str__()
+}
+class SecurityGuard {
+  - name
+  - shift_time
+  + __init__()
+  + check_parking_lot()
+}
+Person <|-- SecurityGuard
+class Car {
+  - license_plate
+  + __init__()
+  + __str__()
+}
+class ParkingLot {
+  - location
+  + __init__()
+  + add_car()
+  + __str__()
+}
+class Shift {
+  - guard
+  - lot
+  + __init__()
+  + start_shift()
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+activate main
+buddy -> eat: call
+buddy -> bark: call
+deactivate main
+@enduml
